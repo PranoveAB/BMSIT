@@ -1,3 +1,3 @@
 the app is hosted on:
 
-https://pranoveab.github.io
+https://pranoveab.github.io/bmsit
