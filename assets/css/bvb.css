@@ -1,0 +1,476 @@
+#sims-container {width:970px;margin:5px;}
+.horizontal-line-dashed { border-top:1px dashed rgb(101, 101, 101); height:0px; margin:5px; }
+.horizontal-line-dashed2 { border-top:1px dashed rgb(101, 101, 101); height:0px; margin:5px 5px 4px 5px; }
+.horizontal-line { border-top:1px solid #696a6a; height:0px; margin:5px; }
+.normaltxt{font-size:11px; color:#605c5d;}
+.mainheading{font-size:14px; color:#1f1a17;margin:5px;padding-left:5px;}
+.subheading{font-size:12px; color:#605c5d;margin:5px;padding-left:5px;} 
+.textlink{font-size:11px; color:#144c70;text-align:center;}
+.textbackground{color:#f8f8f8;}
+.table1stline{font-size:12px; color:#1f1a17;font-weight:bold;}
+.table2ndline{font-size:12px; color:#1f1a17;}
+.initext { font-size:11px; color:#171717; font-weight:normal; } 
+.dashbutton {
+		background-color:#7dba43;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		color: black;
+		font-family: tahoma;
+		font-size: 11px ;
+		font-weight: 600;
+		height: 26px;
+		text-align: center;
+		text-decoration: none;
+		width: 50px;
+		border: 0px solid #145B8B !important;
+}
+.buttonsmall {
+		background-color:#7dba43;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		color: black;
+		font-size: 11px ;
+		/*font-weight: 600;*/
+		font-weight: bold;
+		height: 26px;
+		text-align: center;
+		text-decoration: none;
+		width: 84px;
+		border: 0px solid #145B8B !important;
+		cursor:pointer;
+}
+
+.buttonow {
+		background-color:#7dba43;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		color: black;
+		font-size: 11px ;
+		/*font-weight: 600;*/
+		font-weight: bold;
+		height: 26px;
+		text-align: center;
+		text-decoration: none;
+		width: 84px;
+		border: 0px solid #145B8B !important;
+		cursor:pointer;
+		padding:5px 0px 0px 0px;
+
+}
+.alignmiddle{
+	text-align: left !important;
+}
+
+.buttontxtblack {
+    background-color: #7DBA43;
+    border: 0 solid #145B8B !important;
+    border-radius: 2px 2px 2px 2px;
+    color: black !important;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 14px !important;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none !important;
+    width: 134px !important;
+}
+.buttonblack {
+    background-color: #7DBA43;
+    border: 0 solid #145B8B !important;
+    border-radius: 2px 2px 2px 2px;
+    color: black !important;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    height: 14px !important;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none !important;
+    width: 54px !important;
+}
+
+.buttonlarge {
+		background-color:#7dba43;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		color: black;
+		font-size: 13px !important;
+		/*font-weight: 600;*/
+		font-weight: bold;
+		height: 26px;
+		text-align: center;
+		text-decoration: none;
+		width: 140px;
+		border: 0px solid #145B8B !important;
+		cursor:pointer;
+}
+
+.buttongenid {
+		background-color:#7dba43;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		color: black;
+		font-size: 11px ;
+		/*font-weight: 600;*/
+		font-weight: bold;
+		height: 26px;
+		text-align: center;
+		text-decoration: none;
+		width: 150px;
+		border: 0px solid #145B8B !important;
+		cursor:pointer;
+		padding:5px 0px 0px 0px;
+}
+
+.rowbackground{
+		background-color:#f8f8f8;
+		height:0px;
+}
+
+
+
+
+/*-----------------------Anand B--------------------------*/
+.name{
+
+	padding-left:10px;
+	font-size:11px; 
+	color:#605c5d;
+	font-weight:bold;
+}
+
+.namenew {
+
+	padding-left:30px;
+	font-size:11px; 
+	color:#000000;
+
+}
+
+.img{
+width:50px;
+height:50px;
+margin-left:10px;
+}
+
+.tablename{
+text-align:center;
+font-size:11px; 
+color:#605c5d;
+font-weight:bold;
+
+}
+
+.tablenamenew{
+	text-align:center !important;
+	font-size:11px; 
+	/*color:#605c5d; */
+	color:#000000;
+}
+
+.tablename1{
+text-align:center;
+font-size:11px; 
+color:#605c5d;
+font-weight:bold;
+
+}
+
+.textlink1{
+	font-size:11px;
+	color:#144c70;
+	padding-left:10px;
+}
+
+.textlink2 {
+	font-size:11px;
+	color:#1d5375 !important;
+	text-decoration:underline !important;
+	font-weight:normal !important;
+}
+
+.textlink3 {
+	font-size:11px;
+	color:#FF0000 !important;
+	text-decoration:underline !important;
+	font-weight:normal !important;
+}
+
+.normaltxt1
+{
+	font-size:11px;
+	color:#605c5d;
+	text-align:center !important;
+}
+
+.totaltxt {
+	font-size:11px;
+	color:#605c5d;
+	text-align:center;
+	font-weight:bold;
+}
+
+.textlinknew {
+	font-size:11px;
+	color:#145b8b !important;
+	text-decoration:underline !important;
+	font-weight:normal !important;
+}
+
+.normaltxt3
+{
+font-size:11px;
+color:#605c5d;
+text-align:left;
+padding:5px 0px 5px 40px !important;	
+}
+
+.normaltxt6
+{
+font-size:11px;
+color:#605c5d;
+text-align:center;
+padding:5px 0px 5px 40px !important;	
+}
+
+.normaltxt5
+{
+font-size:11px;
+color:#605c5d;
+text-align:left;
+padding:5px 0px 5px 70px !important;	
+}
+
+.coursename{
+padding-left:15px;
+font-size:11px; 
+color:#605c5d;
+font-weight:bold;
+}
+
+.theadcie {
+	font-size:12px;
+	color:#1f1a17;
+	margin:5px;
+	text-align:center;
+}
+
+.padlft{
+padding-left:5px;
+}
+/*-------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------Krishna Reddy--------------------------*/
+
+.normaltxtleft
+{
+font-size:11px;
+ color:#605c5d;
+text-align:left;
+}
+
+.tablenameleft{
+text-align:left;
+font-size:11px; 
+color:#605c5d;
+font-weight:bold;
+
+}
+.rowbackgroundheight{
+	
+	background-color:#f8f8f8;
+	height:20px;
+}
+.rowbackgroundapply{
+	
+	background-color:#FFCCCC;
+	height:20px;
+}
+
+/*--- Ravi CSS ON May 21st 2012 Start ---*/
+.middleptspan {
+color:#1F1A17; font-size:10pt;
+}
+
+.boldspanclass {
+font-weight:bold;
+}
+
+.padwidthlarge {
+padding:0px 0px 0px 5px !important; width:600px; 
+}
+
+.padonlymedium {
+padding-left:30px;
+}
+
+.padonlylarge {
+padding-left:40px; 
+}
+
+.padonlysmall {
+padding-left:10px; 
+}
+
+.padrightleftsmall {
+padding:0px 10px 0px 5px !important;
+}
+
+.borderdashedrightclass {
+border-right:1px dashed #656565; vertical-align:top;
+}
+
+.padonlyleftsmall {
+padding:0px 0px 0px 5px !important;
+}
+
+.padonlyrightsmall {
+padding:0px 10px 0px 0px !important;
+}
+
+.padonlystreamsmall {
+padding-left:10px !important;
+}
+
+.padonlystreamlarge {
+padding-left:50px !important; 
+}
+
+.padonlystreammedium {
+padding-left:20px !important;
+}
+
+.streamhovclass {
+color:#1F1A17; font-size:8pt; 
+}
+
+.seatcountclass {
+	width:90px !important; 
+	height:23px !important; 
+	border:2px solid #ccc !important; 
+	background:url('http://parents.msrit.edu/components/com_bvbsims/assets/css/components/com_sims/assets/images/date_picker_final.png'); 
+	background-repeat:no-repeat; 
+	background-color:#FFFFFF; 
+	color:#605C5D !important;
+	text-align:center;
+}
+
+.secondcolinkclassseatalloc {
+	padding:0px 0px 0px 15px !important; vertical-align:top;
+}
+
+/*--- Ravi CSS On May 21st 2012 End ---*/
+
+
+/*--- Ravi CSS On 26062012 Start ---*/
+
+.mainheading1{font-size:14px; color:#1f1a17;padding-left:10px;}
+
+.subheading1
+{
+	font-size:12px; 
+	color:#605c5d;
+	padding-left:10px;
+}
+
+.img{
+	width:40px;
+	height:50px;
+	margin-left:10px;
+}
+
+.name{
+	padding-left:10px;
+	font-size:11px; 
+	color:#605c5d;
+	font-weight:bold;
+}
+
+.name1{
+	padding-left:25px;
+	font-size:11px; 
+	color:#605c5d;
+	font-weight:bold;
+}
+
+.textlink1{
+	font-size:11px;
+	color:#144c70;
+	padding-left:10px;
+}
+
+.normaltxt2{font-size:11px; color:#605c5d;padding-left:10px;}
+.subject{
+	padding-left:15px;
+
+}
+
+.sem{font-size:11px; color:#144c70;padding-left:35px;}
+
+.inp{
+	color:#605C5D;
+	width:110px;
+	height:20px;
+	text-align:center;
+	font-size:8pt;
+	border:1px solid #cccccc;
+}
+
+.constituent{
+	font-size:11px;
+	/*padding-left:25px;*/
+}
+
+.calender {
+	background-image:url('http://parents.msrit.edu/components/com_bvbsims/assets/images/date_picker_final.png');
+	font-size:8pt;	
+	height:20px;
+	border:1px solid #cccccc;
+}
+
+
+/*--- Ravi CSS On 26062012 End ---*/
+
+
+/*----------------Aditya CSS on 13-July-2012----------------------------*/
+
+
+.myselect{border: 1px solid #a6a5a4;width:180px;height:20px;font-size:12px;}
+
+.buttonsmall {
+	background-color:#7dba43;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: black;
+	font-size: 11px ;
+	font-weight: bold;
+	height: 26px;
+	text-align: center;
+	text-decoration: none;
+	width: 84px;
+	border: 0px solid #145B8B !important;
+	cursor:pointer;
+}
+
+.bacgcolor{
+
+background-color:#f8f8f8;
+
+}
+.subjectHeading {font-size:13pt; color:#1f1a17;padding:10px;font-weight:bold;}
+
+.subjectSubheading {font-size:11pt; color:#232323;padding:10px;}
+
+
+/*----------------Aditya CSS on 13-July-2012----------------------------*/
+
+/*----------------Ravi CSS on 16-July-2012----------------------------*/
+.poptr {
+	background-color:#f7f7f7;  height:35px;
+}
+/*----------------Ravi CSS on 16-July-2012----------------------------*/
+

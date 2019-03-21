@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>http://parents.msrit.edu/index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=observation</title><link rel="stylesheet" type="text/css" href="resource://content-accessible/viewsource.css"></head><body id="viewsource" class="highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span>
+<span id="line2"></span>
+<span id="line3"></span></span><span class="error doctype" title="Almost standards mode doctype. Expected “&lt;!DOCTYPE html&gt;”.">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span><span>
+<span id="line4"></span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">xmlns</span>="<a class="attribute-value">http://www.w3.org/1999/xhtml</a>" <span class="attribute-name">xml:lang</span>="<a class="attribute-value">en-gb</a>" <span class="attribute-name">lang</span>="<a class="attribute-value">en-gb</a>" &gt;</span><span>
+<span id="line5"></span></span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line6"></span></span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>Contineo - Bringing Happyness to work and study places!</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+<span id="line7"></span></span><span>&lt;<span class="start-tag">style</span>&gt;</span><span>
+<span id="line8"></span>@font-face {
+<span id="line9"></span>  font-family: 'Roboto Light';
+<span id="line10"></span>  src: url('templates/contineoReg/fonts/roboto/Roboto-Light.ttf');
+<span id="line11"></span>}
+<span id="line12"></span>@font-face {
+<span id="line13"></span>  font-family: 'tahoma';
+<span id="line14"></span>  src: url('components/com_studentdashboard/assets/fonts/tohoma/Tahoma.ttf');
+<span id="line15"></span>}
+<span id="line16"></span>
+<span id="line17"></span>@font-face {
+<span id="line18"></span>  font-family: 'parentportalfont';
+<span id="line19"></span>  src: url('templates/contineoReg/fonts/lane/LANEPOSH.ttf');
+<span id="line20"></span>}
+<span id="line21"></span></span><span>&lt;/<span class="end-tag">style</span>&gt;</span><span>
+<span id="line22"></span>
+<span id="line23"></span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">http-equiv</span>="<a class="attribute-value">content-type</a>" <span class="attribute-name">content</span>="<a class="attribute-value">text/html; charset=utf-8</a>" <span>/</span>&gt;</span><span>
+<span id="line24"></span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">robots</a>" <span class="attribute-name">content</span>="<a class="attribute-value">index, follow</a>" <span>/</span>&gt;</span><span>
+<span id="line25"></span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">keywords</a>" <span class="attribute-name">content</span>="<a class="attribute-value">joomla, Joomla</a>" <span>/</span>&gt;</span><span>
+<span id="line26"></span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">description</a>" <span class="attribute-name">content</span>="<a class="attribute-value">Joomla! - the dynamic portal engine and content management system</a>" <span>/</span>&gt;</span><span>
+<span id="line27"></span>  </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">generator</a>" <span class="attribute-name">content</span>="<a class="attribute-value">Joomla! 1.5 - Open Source Content Management</a>" <span>/</span>&gt;</span><span>
+<span id="line28"></span>  </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>Contineo For College</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+<span id="line29"></span>  </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>" <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/includes/js/joomla.javascript.js">/includes/js/joomla.javascript.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line30"></span>
+<span id="line31"></span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/system/css/system.css">/templates/system/css/system.css</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" <span>/</span>&gt;</span><span>
+<span id="line32"></span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/system/css/general.css">/templates/system/css/general.css</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" <span>/</span>&gt;</span><span>
+<span id="line33"></span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/contineoReg/css/template.css">/templates/contineoReg/css/template.css</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" <span>/</span>&gt;</span><span>
+<span id="line34"></span></span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/contineoReg/css/student.css">/templates/contineoReg/css/student.css</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/css</a>" <span>/</span>&gt;</span><span>
+<span id="line35"></span>
+<span id="line36"></span>
+<span id="line37"></span></span><span class="comment">&lt;!--[if IE 6]&gt;
+<span id="line38"></span> &lt;link rel="stylesheet" href="/templates/contineoReg/css/ie6hacks.css" type="text/css" /&gt;
+<span id="line39"></span>&lt;![endif]--&gt;</span><span>
+<span id="line40"></span></span><span class="comment">&lt;!--[if IE 7]&gt;
+<span id="line41"></span> &lt;link rel="stylesheet" href="/templates/contineoReg/css/ie7hacks.css" type="text/css" /&gt;
+<span id="line42"></span>&lt;![endif]--&gt;</span><span>
+<span id="line43"></span></span><span class="comment">&lt;!--[if IE 8]&gt;
+<span id="line44"></span> &lt;link rel="stylesheet" href="/templates/contineoReg/css/ie8hacks.css" type="text/css" /&gt;
+<span id="line45"></span>&lt;![endif]--&gt;</span><span>
+<span id="line46"></span></span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line47"></span></span><span>&lt;<span class="start-tag">body</span> <span class="attribute-name">id</span>="<a class="attribute-value">page_bg</a>"  &gt;</span><span>
+<span id="line48"></span>
+<span id="line49"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">container</a>"&gt;</span><span>
+<span id="line50"></span>
+<span id="line51"></span> </span><span>&lt;<span class="start-tag">style</span>&gt;</span><span>
+<span id="line52"></span>
+<span id="line53"></span>    .logo
+<span id="line54"></span>
+<span id="line55"></span>    {
+<span id="line56"></span>
+<span id="line57"></span>        background-image:url('templates/contineoReg/images/menu/menu-left-back.png');
+<span id="line58"></span>
+<span id="line59"></span>        background-repeat:repeat-x;
+<span id="line60"></span>
+<span id="line61"></span>        padding:5px,5px,5px,5px;
+<span id="line62"></span>
+<span id="line63"></span>    }
+<span id="line64"></span>
+<span id="line65"></span>    .option
+<span id="line66"></span>
+<span id="line67"></span>    {
+<span id="line68"></span>
+<span id="line69"></span>        background:#6f3954;
+<span id="line70"></span>
+<span id="line71"></span>        padding:0px,5px,0px,5px;
+<span id="line72"></span>
+<span id="line73"></span>        height:54px;
+<span id="line74"></span>
+<span id="line75"></span>    }
+<span id="line76"></span>
+<span id="line77"></span>    .menulink
+<span id="line78"></span>
+<span id="line79"></span>    {
+<span id="line80"></span>
+<span id="line81"></span>        color:#FFFFFF; 
+<span id="line82"></span>
+<span id="line83"></span>        font-size:14pt;
+<span id="line84"></span>
+<span id="line85"></span>        font-weight:normal;
+<span id="line86"></span>
+<span id="line87"></span>        text-decoration:underline;
+<span id="line88"></span>
+<span id="line89"></span>    }
+<span id="line90"></span>
+<span id="line91"></span>    .maintable
+<span id="line92"></span>
+<span id="line93"></span>    {
+<span id="line94"></span>
+<span id="line95"></span>        margin:5px;
+<span id="line96"></span>
+<span id="line97"></span>        color:#FFFFFF;
+<span id="line98"></span>
+<span id="line99"></span>        font-size:11pt;
+<span id="line100"></span>
+<span id="line101"></span>	font-family:'Raleway-Medium';
+<span id="line102"></span>
+<span id="line103"></span>    }
+<span id="line104"></span>
+<span id="line105"></span>
+<span id="line106"></span>
+<span id="line107"></span>    @font-face 
+<span id="line108"></span>
+<span id="line109"></span>    {
+<span id="line110"></span>
+<span id="line111"></span>  	font-family: 'Raleway-Medium';
+<span id="line112"></span>
+<span id="line113"></span>  	src: url('templates/contineoReg/images/menu/Raleway/Raleway-Medium.otf');
+<span id="line114"></span>
+<span id="line115"></span>    }
+<span id="line116"></span>
+<span id="line117"></span>
+<span id="line118"></span>
+<span id="line119"></span>
+<span id="line120"></span>
+<span id="line121"></span>    .shadow123
+<span id="line122"></span>
+<span id="line123"></span>    {
+<span id="line124"></span>
+<span id="line125"></span>        width:100%;
+<span id="line126"></span>
+<span id="line127"></span>        position:relative;
+<span id="line128"></span>
+<span id="line129"></span>        float:right;
+<span id="line130"></span>
+<span id="line131"></span>        top:-11px;
+<span id="line132"></span>
+<span id="line133"></span>        
+<span id="line134"></span>
+<span id="line135"></span>    }
+<span id="line136"></span>
+<span id="line137"></span>    
+<span id="line138"></span>
+<span id="line139"></span>    @print { .noprint{display: none;} }
+<span id="line140"></span>
+<span id="line141"></span>    
+<span id="line142"></span>
+<span id="line143"></span></span><span>&lt;/<span class="end-tag">style</span>&gt;</span><span>
+<span id="line144"></span>
+<span id="line145"></span>
+<span id="line146"></span>
+<span id="line147"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">noprint</a>"&gt;</span><span>
+<span id="line148"></span>
+<span id="line149"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">page-header</a>"&gt;</span><span>
+<span id="line150"></span>
+<span id="line151"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">border-bottom: 1px solid #ccc;</a>"&gt;</span><span>
+<span id="line152"></span>
+<span id="line153"></span>    </span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">style</span>="<a class="attribute-value">width:100%;</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line154"></span>
+<span id="line155"></span>    </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span> </span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/contineoReg/images/menu/msrit-logo.png">templates/contineoReg/images/menu/msrit-logo.png</a>" <span class="attribute-name">height</span>="<a class="attribute-value">75px</a>" <span>/</span>&gt;</span><span>
+<span id="line156"></span>
+<span id="line157"></span>      
+<span id="line158"></span>
+<span id="line159"></span>      </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span> 
+<span id="line160"></span>
+<span id="line161"></span>      </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">style</span>="<a class="attribute-value">padding-left:10px ; padding-top:15px ; color:#666666;</a>"&gt;</span><span> 
+<span id="line162"></span>
+<span id="line163"></span>      </span><span>&lt;<span class="start-tag">strong</span> <span class="attribute-name">style</span>="<a class="attribute-value">font-family: Raleway-Medium; font-size:25px;font-weight: bold;</a>"&gt;</span><span>Ramaiah Institute of Technology, Bangalore</span><span>&lt;/<span class="end-tag">strong</span>&gt;</span><span> </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line164"></span>
+<span id="line165"></span>      </span><span>&lt;<span class="start-tag">td</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://contineo.in/">http://contineo.in</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">style</span>="<a class="attribute-value">padding-left:10px;</a>" <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/contineoReg/images/menu/contineologo.png">templates/contineoReg/images/menu/contineologo.png</a>" <span>/</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span> </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line166"></span>
+<span id="line167"></span> </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>    
+<span id="line168"></span>
+<span id="line169"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line170"></span>
+<span id="line171"></span></span><span class="comment">&lt;!--&lt;div style="width:96%;height:25px;padding:5px;font-weight:bold;"&gt;&lt;div style="float:right;"&gt;
+<span id="line172"></span>
+<span id="line173"></span>&lt;a class="atagblock" href="javascript:document.log.submit()"&gt;
+<span id="line174"></span>
+<span id="line175"></span>                                &lt;span&gt;Logout&lt;/span&gt;
+<span id="line176"></span>
+<span id="line177"></span>                        &lt;/a&gt;
+<span id="line178"></span>
+<span id="line179"></span>&lt;/div&gt;&lt;/div&gt;--&gt;</span><span>
+<span id="line180"></span>
+<span id="line181"></span> </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">action</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php">index.php</a>" <span class="attribute-name">method</span>="<a class="attribute-value">POST</a>" <span class="attribute-name">name</span>="<a class="attribute-value">log</a>"&gt;</span><span>
+<span id="line182"></span>
+<span id="line183"></span>                                </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">option</a>" <span class="attribute-name">value</span>="<a class="attribute-value">com_user</a>"&gt;</span><span>
+<span id="line184"></span>
+<span id="line185"></span>                                </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">task</a>" <span class="attribute-name">value</span>="<a class="attribute-value">logout</a>"&gt;</span><span>
+<span id="line186"></span>
+<span id="line187"></span>                                </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">hidden</a>" <span class="attribute-name">name</span>="<a class="attribute-value">return</a>" <span class="attribute-name">value</span>="<a class="attribute-value">�w^Ƙi</a>"&gt;</span><span>
+<span id="line188"></span>
+<span id="line189"></span>                            </span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line190"></span>
+<span id="line191"></span>
+<span id="line192"></span>
+<span id="line193"></span></span><span class="error doctype" title="Stray doctype.">&lt;!doctype html&gt;</span><span>
+<span id="line194"></span></span><span class="error" title="Stray start tag “html”.">&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>='<a class="attribute-value"></a>'&gt;</span><span>
+<span id="line195"></span></span><span class="error" title="Stray start tag “head”.">&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line196"></span>   </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>='<a class="attribute-value">utf-8</a>'&gt;</span><span>
+<span id="line197"></span>   </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">http-equiv</span>="<a class="attribute-value">X-UA-Compatible</a>" <span class="attribute-name">content</span>="<a class="attribute-value">IE=edge</a>"&gt;</span><span>
+<span id="line198"></span>   </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">viewport</a>" <span class="attribute-name">content</span>="<a class="attribute-value">width=device-width, initial-scale=1</a>"&gt;</span><span>
+<span id="line199"></span>   </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/contineoReg/menus/b/styles.css">templates/contineoReg/menus/b/styles.css</a>"&gt;</span><span>
+<span id="line200"></span>   </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://code.jquery.com/jquery-latest.min.js">http://code.jquery.com/jquery-latest.min.js</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line201"></span>   </span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/templates/contineoReg/menus/b/script.js">templates/contineoReg/menus/b/script.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line202"></span>   </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>CSS MenuMaker</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+<span id="line203"></span></span><span class="error" title="Stray end tag “head”.">&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line204"></span></span><span class="error" title="An “body” start tag seen but an element of the same type was already open.">&lt;<span class="start-tag">body</span>&gt;</span><span>
+<span id="line205"></span>
+<span id="line206"></span>
+<span id="line207"></span>        
+<span id="line208"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>='<a class="attribute-value">cssmenu</a>'&gt;</span><span>
+<span id="line209"></span></span><span>&lt;<span class="start-tag">ul</span>&gt;</span><span>
+<span id="line210"></span>   </span><span>&lt;<span class="start-tag">li</span> <span class="attribute-name">class</span>='<a class="attribute-value">active</a>'&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=dashboard">index.php?option=com_studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>con</span>troller=studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=dashboard</a>"&gt;</span><span>Home</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line211"></span>   </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span>  <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=observation">index.php?option=com_studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>con</span>troller=studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=observation</a>"&gt;</span><span>PROCTORSHIP</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line212"></span>   </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span>  <span class="attribute-name">title</span>="<a class="attribute-value">Payment History</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=studFee">index.php?option=com_studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>con</span>troller=studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=studFee</a>"  &gt;</span><span>Fee</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line213"></span>   </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span>  <span class="attribute-name">title</span>="<a class="attribute-value">Notice Board</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=noticeBoard">index.php?option=com_studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>con</span>troller=studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=noticeBoard</a>"  &gt;</span><span>Notice Board</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line214"></span>   </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span>  <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_bvbsims&amp;controller=academiccal&amp;task=calenderdisplay&amp;yearId=3">index.php?option=com_bvbsims<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>con</span>troller=academiccal<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=calenderdisplay<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ye</span>arId=3</a>" &gt;</span><span>Events</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line215"></span>      </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span>  <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=timetable">index.php?option=com_studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>con</span>troller=studentdashboard<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=timetable</a>" &gt;</span><span>Timetable</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line216"></span>      
+<span id="line217"></span>       </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span>  <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_history&amp;task=getResult&amp;usn=1MS17EC128">index.php?option=com_history<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=getResult<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>us</span>n=1MS17EC128</a>" &gt;</span><span>Exam History</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line218"></span>   </span><span>&lt;<span class="start-tag">li</span>&gt;</span><span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">href</span>="<a class="attribute-value">javascript:document.log.submit()</a>"&gt;</span><span>Logout</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">li</span>&gt;</span><span>
+<span id="line219"></span>   </span><span class="comment">&lt;!--&lt;li style="margin-left:160px;"&gt;&lt;a href="javascript:document.log.submit()"&gt;Logout&lt;/a&gt;&lt;/li&gt;--&gt;</span><span>
+<span id="line220"></span></span><span>&lt;/<span class="end-tag">ul</span>&gt;</span><span>
+<span id="line221"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line222"></span>
+<span id="line223"></span></span><span class="error" title="End tag for “body” seen, but there were unclosed elements.">&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line224"></span></span><span class="error" title="Stray start tag “html”.">&lt;<span class="start-tag">html</span>&gt;</span><span>
+<span id="line225"></span></span><span class="error" title="Stray start tag “div”.">&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">font-size:10px;float:right;color:#A00000;</a>"&gt;</span><span>Last Updated On :2019-01-23 19:49:07</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span></span><span>&lt;<span class="start-tag">br</span><span>/</span>&gt;</span><span>
+<span id="line226"></span>		
+<span id="line227"></span>  </span><span class="comment">&lt;!--  &lt;div id="page-header"&gt; --&gt;</span><span>
+<span id="line228"></span></span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">name</span>="<a class="attribute-value">start</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line229"></span>
+<span id="line230"></span>
+<span id="line231"></span>
+<span id="line232"></span>
+<span id="line233"></span>   </span><span class="comment">&lt;!-- &lt;div id="header0"&gt;&lt;/div&gt; --&gt;</span><span>
+<span id="line234"></span>
+<span id="line235"></span>
+<span id="line236"></span>
+<span id="line237"></span>
+<span id="line238"></span>
+<span id="line239"></span>
+<span id="line240"></span>
+<span id="line241"></span>
+<span id="line242"></span>
+<span id="line243"></span>
+<span id="line244"></span>
+<span id="line245"></span>
+<span id="line246"></span>
+<span id="line247"></span>
+<span id="line248"></span>
+<span id="line249"></span>	</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">text-align:right; padding-right:30px;</a>"&gt;</span><span>
+<span id="line250"></span>
+<span id="line251"></span>
+<span id="line252"></span>
+<span id="line253"></span>
+<span id="line254"></span>
+<span id="line255"></span>
+<span id="line256"></span>
+<span id="line257"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line258"></span>
+<span id="line259"></span>
+<span id="line260"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span>
+<span id="line261"></span>
+<span id="line262"></span>
+<span id="line263"></span>function submitforms()
+<span id="line264"></span>
+<span id="line265"></span>
+<span id="line266"></span>{
+<span id="line267"></span>
+<span id="line268"></span>
+<span id="line269"></span>    document.logLogo.submit();
+<span id="line270"></span>
+<span id="line271"></span>
+<span id="line272"></span>}
+<span id="line273"></span>
+<span id="line274"></span>
+<span id="line275"></span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line276"></span>
+<span id="line277"></span>
+<span id="line278"></span> </span><span class="comment">&lt;!-- &lt;/div&gt; --&gt;</span><span>
+<span id="line279"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line280"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">sub-container</a>" <span class="attribute-name">style</span> = "<a class="attribute-value">vertical-align:top;</a>"&gt;</span><span>
+<span id="line281"></span>	</span><span>&lt;<span class="start-tag">div</span>&gt;</span><span>
+<span id="line282"></span>          </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">id</span>="<a class="attribute-value">message-container</a>" &gt;</span><span>
+<span id="line283"></span>	         
+<span id="line284"></span>	  </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span> 
+<span id="line285"></span>	  </span><span class="comment">&lt;!--*************left panel start**************--&gt;</span><span>
+<span id="line286"></span>	  </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">width:15%;float:left;</a>"&gt;</span><span>
+<span id="line287"></span>             </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">width:100%;</a>"&gt;</span><span>
+<span id="line288"></span>		  		     </span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">src</span> = "<a class="attribute-value" href="view-source:http://parents.msrit.edu/images/comprofiler/Thumbnail_User_Original_14749_20170703143533.jpg">images/comprofiler/Thumbnail_User_Original_14749_20170703143533.jpg</a>" <span class="attribute-name">class</span> = "<a class="attribute-value">imagize</a>" <span class="attribute-name">style</span>="<a class="attribute-value">width:130px;height:120px;border: 1px solid #5d5d5d;</a>" <span>/</span>&gt;</span><span>
+<span id="line289"></span>		                         </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">height:2px;</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line290"></span>              </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line291"></span>              </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">tname2</a>"&gt;</span><span>
+<span id="line292"></span>			        VIKAS M	      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line293"></span>	      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">tname2</a>" <span class="attribute-name">style</span>="<a class="attribute-value">color:#800080;</a>"&gt;</span><span>
+<span id="line294"></span>			        1MS17EC128	      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line295"></span>
+<span id="line296"></span>              </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">tname2</a>"&gt;</span><span>
+<span id="line297"></span>			        Semester 3	      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line298"></span>                       </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">tname2</a>" <span class="attribute-name">style</span>="<a class="attribute-value">color:red;font-size:11pt;</a>"&gt;</span><span>
+<span id="line299"></span>			        Credits Earned : 50	      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line300"></span>             </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">tname2</a>" <span class="attribute-name">style</span>="<a class="attribute-value">color:red;font-size:11pt;</a>"&gt;</span><span>
+<span id="line301"></span>			        Credits to Earn : 150	      </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line302"></span>	      </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">tname2</a>"&gt;</span><span></span><span>&lt;<span class="start-tag">marquee</span> <span class="attribute-name">SCROLLDELAY</span>=<a class="attribute-value">300</a> &gt;</span><span>
+<span id="line303"></span>			       </span><span>&lt;<span class="start-tag">a</span> <span class="attribute-name">class</span>="<a class="attribute-value">atagblock</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/index.php?option=com_report&amp;task=getChallanReport&amp;id=financeletterind&amp;usn=1MS17EC128">index.php?option=com_report<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>ta</span>sk=getChallanReport<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>i</span>d=financeletterind<span><span class="error" title="“&amp;” did not start a character reference. (“&amp;” probably should have been escaped as “&amp;amp;”.)">&amp;</span>us</span>n=1MS17EC128</a>"&gt;</span><span>Click here to Generate Finance Letter</span><span>&lt;/<span class="end-tag">a</span>&gt;</span><span>
+<span id="line304"></span>	      </span><span>&lt;/<span class="end-tag">marquee</span>&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>	      
+<span id="line305"></span>	      
+<span id="line306"></span>	      	     </span><span class="error comment" title="Consecutive hyphens did not terminate a comment. “--” is not permitted inside a comment, but e.g. “- -” is.">&lt;!-- &lt;div style="height:5px;border-top: 1px solid #dddddd;width:100%;"&gt;&amp;nbsp;&lt;/div&gt;
+<span id="line307"></span>	      
+<span id="line308"></span>	      
+<span id="line309"></span>	      &lt;div class="atag"&gt;
+<span id="line310"></span>		&lt;a class="atagblock" href="index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=dashboard"&gt;Home&lt;/a&gt;
+<span id="line311"></span>							
+<span id="line312"></span>		&lt;/div&gt;
+<span id="line313"></span>		
+<span id="line314"></span>		
+<span id="line315"></span>	     
+<span id="line316"></span>	      
+<span id="line317"></span>		&lt;div style="height:2px;"&gt;&lt;/div&gt;
+<span id="line318"></span>		&lt;div class="atag"&gt;&lt;a  class="atagblock" href="index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=observation"&gt;Proctorial notes&lt;/a&gt;&lt;/div&gt;
+<span id="line319"></span>		&lt;div style="height:2px;"&gt;&lt;/div&gt;				
+<span id="line320"></span>		&lt;div class="atag"&gt;&lt;a  class="atagblock" title="Payment History" href="index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=studFee"  &gt;Fee status&lt;/a&gt;&lt;/div&gt;
+<span id="line321"></span>		&lt;div style="height:2px;"&gt;&lt;/div&gt;
+<span id="line322"></span>		
+<span id="line323"></span>			&lt;div class="atag"&gt;&lt;a  class="atagblock" title="Payment History" href="index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=noticeBoard"  &gt;Notice Board&lt;/a&gt;&lt;/div&gt;
+<span id="line324"></span>		&lt;div style="height:2px;"&gt;&lt;/div&gt;
+<span id="line325"></span>		
+<span id="line326"></span>		        
+<span id="line327"></span>        
+<span id="line328"></span>		&lt;div class="atag"&gt;&lt;a  class="atagblock" href="index.php?option=com_bvbsims&amp;controller=academiccal&amp;task=calenderdisplay&amp;yearId=3" &gt;Calendar Of Events&lt;/a&gt;&lt;/div&gt;
+<span id="line329"></span>		
+<span id="line330"></span>		&lt;div style="height:2px;"&gt;&lt;/div&gt;
+<span id="line331"></span>		&lt;div class="atag"&gt;&lt;a  class="atagblock" href="index.php?option=com_studentdashboard&amp;controller=studentdashboard&amp;task=timetable" &gt;Timetable&lt;/a&gt;&lt;/div&gt;
+<span id="line332"></span>		&lt;div style="height:2px;"&gt;&lt;/div&gt;
+<span id="line333"></span>		&lt;div class="atag"&gt;&lt;a href="index.php?option=com_history&amp;task=getResult&amp;usn=1MS17EC128" style = "font-weight:normal; text-decoration:underline;"&gt;Exam History&lt;/a&gt;
+<span id="line334"></span>						
+<span id="line335"></span>		&lt;!--&lt;a class="atagblock" href="javascript:alert('coming soon..');"&gt;Exam History&lt;/a&gt;	
+<span id="line336"></span>							
+<span id="line337"></span>		&lt;/div&gt;--&gt;</span><span>
+<span id="line338"></span>	    
+<span id="line339"></span>
+<span id="line340"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line341"></span></span><span class="comment">&lt;!-- *************left panel start************** --&gt;</span><span>
+<span id="line342"></span>	</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">width:80%;float:left;border-left:1px solid #ccc;padding-left:10px;min-height:600px;</a>"&gt;</span><span>
+<span id="line343"></span>         
+<span id="line344"></span>	
+<span id="line345"></span>
+<span id="line346"></span></span><span class="comment">&lt;!--&lt;style&gt;
+<span id="line347"></span>@font-face {
+<span id="line348"></span>  font-family: 'Roboto Light';
+<span id="line349"></span>  src: url('components/com_studentdashboard/assets/fonts/roboto/Roboto-Light.ttf');
+<span id="line350"></span>}
+<span id="line351"></span>&lt;/style&gt;--&gt;</span><span>
+<span id="line352"></span>
+<span id="line353"></span></span><span class="comment">&lt;!--&lt;link rel="stylesheet" type="text/css" href="components/com_studentdashboard/assets/css/student.css"&gt;--&gt;</span><span>
+<span id="line354"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/components/com_cie/assets/javascript/jquery-1.6.2.min.js">components/com_cie/assets/javascript/jquery-1.6.2.min.js</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line355"></span></span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/components/com_cie/assets/javascript/thickbox.js">components/com_cie/assets/javascript/thickbox.js</a>" <span class="attribute-name">type</span>="<a class="attribute-value">text/javascript</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line356"></span>
+<span id="line357"></span>	</span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/components/com_counseling/assets/base/jquery.ui.all.css">components/com_counseling/assets/base/jquery.ui.all.css</a>"&gt;</span><span>
+<span id="line358"></span>
+<span id="line359"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/components/com_counseling/assets/ui/jquery.ui.core.js">components/com_counseling/assets/ui/jquery.ui.core.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line360"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/components/com_counseling/assets/ui/jquery.ui.widget.js">components/com_counseling/assets/ui/jquery.ui.widget.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line361"></span>	</span><span>&lt;<span class="start-tag">script</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/components/com_counseling/assets/ui/jquery.ui.datepicker.js">components/com_counseling/assets/ui/jquery.ui.datepicker.js</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line362"></span>
+<span id="line363"></span>	</span><span>&lt;<span class="start-tag">script</span>&gt;</span><span>
+<span id="line364"></span>$(function() {
+<span id="line365"></span>		$( "#datepicker" ).datepicker();
+<span id="line366"></span>		$( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+<span id="line367"></span>	});
+<span id="line368"></span>	</span><span>&lt;/<span class="end-tag">script</span>&gt;</span><span>
+<span id="line369"></span></span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">width</span>="<a class="attribute-value">100%</a>" <span class="attribute-name">border</span>="<a class="attribute-value">0</a>"&gt;</span><span>
+<span id="line370"></span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line371"></span>
+<span id="line372"></span>   
+<span id="line373"></span>                </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">width</span>="<a class="attribute-value">100%</a>"&gt;</span><span>
+<span id="line374"></span>                    </span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">width</span>="<a class="attribute-value">100%</a>" <span class="attribute-name">class</span>="<a class="attribute-value">dash_even_row</a>" <span class="attribute-name">height</span>="<a class="attribute-value">40px</a>" <span class="attribute-name">cellpadding</span>="<a class="attribute-value">0px</a>" <span class="attribute-name">cellspacing</span>="<a class="attribute-value">0px</a>" <span class="attribute-name">border</span>="<a class="attribute-value">0px</a>"&gt;</span><span>
+<span id="line375"></span>                        </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>                        
+<span id="line376"></span>                            </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">width</span>="<a class="attribute-value">13%</a>" &gt;</span><span></span><span class="comment">&lt;!-- &lt;img src="#" width="100px" height="100px"&gt; --&gt;</span><span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line377"></span>                                                        </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">headingdateWhite text1</a>" <span class="attribute-name">style</span>="<a class="attribute-value">font-size:14pt;</a>"&gt;</span><span>
+<span id="line378"></span> 				
+<span id="line379"></span>                           </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">style</span>='<a class="attribute-value">text-transform:capitalize</a>'&gt;</span><span> C G Raghavendra</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span><span class="entity"><span>&amp;</span>nbsp;</span><span class="entity"><span>&amp;</span>nbsp;</span>	                                        
+<span id="line380"></span>                                </span><span class="error" title="No “p” element in scope but a “p” end tag seen.">&lt;/<span class="end-tag">p</span>&gt;</span><span>
+<span id="line381"></span>						    </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line382"></span>
+<span id="line383"></span>                            </span><span class="comment">&lt;!--&lt;td class="headingdateWhite" style="text-align:center; color:#333333;" width="15%" align="right"&gt;&lt;span style='text-transform:uppercase;'&gt; &lt;/span&gt;&lt;/td&gt;--&gt;</span><span>
+<span id="line384"></span>                            </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">class</span>="<a class="attribute-value">headingdateWhite text1</a>" <span class="attribute-name">style</span>="<a class="attribute-value">font-size:14pt;</a>" <span class="attribute-name">colspan</span>="<a class="attribute-value">2</a>" <span class="attribute-name">width</span>="<a class="attribute-value">50%</a>" <span class="attribute-name error" title="Duplicate attribute.">style</span>="<a class="attribute-value">padding-right:10px; color:#333333;</a>" <span class="attribute-name">align</span>="<a class="attribute-value">right</a>"&gt;</span><span> </span><span>&lt;<span class="start-tag">span</span> <span class="attribute-name">style</span>='<a class="attribute-value">text-transform:capitalize</a>'&gt;</span><span>  Electronics and Communication Engineering</span><span>&lt;/<span class="end-tag">span</span>&gt;</span><span> </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>                            
+<span id="line385"></span>                        </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line386"></span>                    </span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line387"></span>					             	</span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">position:relative;top:-30px;left:20px;</a>"&gt;</span><span>
+<span id="line388"></span></span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">width</span>="<a class="attribute-value">80px</a>"  <span class="attribute-name">height</span>="<a class="attribute-value">100px</a>" <span class="attribute-name">style</span>="<a class="attribute-value">border:0px;</a>" <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:http://parents.msrit.edu/images/comprofiler/gallery/male.jpg">images/comprofiler/gallery/male.jpg</a>"&gt;</span><span>
+<span id="line389"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line390"></span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">style</span>="<a class="attribute-value">position:relative;top:-30px;left:30px;</a>"&gt;</span><span> 
+<span id="line391"></span></span><span class="error" title="End tag “td” seen, but there were open elements.">&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line392"></span></span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line393"></span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line394"></span></span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>='<a class="attribute-value">3</a>'&gt;</span><span>
+<span id="line395"></span>
+<span id="line396"></span></span><span>&lt;<span class="start-tag">h3</span> <span class="attribute-name">class</span>="<a class="attribute-value">page-head-line</a>"&gt;</span><span>
+<span id="line397"></span>                        </span><span>&lt;<span class="start-tag">table</span> <span class="attribute-name">width</span>="<a class="attribute-value">100%</a>"&gt;</span><span>
+<span id="line398"></span>                        </span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line399"></span>                                </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">width</span>="<a class="attribute-value">95%</a>" &gt;</span><span>Proctorial Notes</span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line400"></span>                                        </span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">width</span>="<a class="attribute-value">5%</a>" <span class="attribute-name">valign</span>="<a class="attribute-value">bottom</a>"&gt;</span><span>
+<span id="line401"></span>                                        </span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line402"></span>                        </span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line403"></span>                        </span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line404"></span></span><span>&lt;/<span class="end-tag">h3</span>&gt;</span><span>
+<span id="line405"></span>
+<span id="line406"></span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line407"></span>
+<span id="line408"></span></span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line409"></span>
+<span id="line410"></span>
+<span id="line411"></span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span></span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">colspan</span>='<a class="attribute-value">3</a>' <span class="attribute-name">style</span>="<a class="attribute-value">height:35px;</a>"&gt;</span><span>
+<span id="line412"></span>
+<span id="line413"></span>
+<span id="line414"></span>
+<span id="line415"></span></span><span>&lt;<span class="start-tag">tr</span>&gt;</span><span>
+<span id="line416"></span></span><span>&lt;<span class="start-tag">td</span> <span class="attribute-name">align</span>='<a class="attribute-value">right</a>'&gt;</span><span>
+<span id="line417"></span>
+<span id="line418"></span></span><span>&lt;/<span class="end-tag">td</span>&gt;</span><span>
+<span id="line419"></span></span><span>&lt;/<span class="end-tag">tr</span>&gt;</span><span>
+<span id="line420"></span>
+<span id="line421"></span></span><span>&lt;/<span class="end-tag">table</span>&gt;</span><span>
+<span id="line422"></span>
+<span id="line423"></span>         </span><span>&lt;<span class="start-tag">br</span> <span>/</span>&gt;</span><span></span><span>&lt;<span class="start-tag">br</span> <span>/</span>&gt;</span><span>
+<span id="line424"></span>         </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line425"></span>		         </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line426"></span>
+<span id="line427"></span>
+<span id="line428"></span></span><span class="comment">&lt;!-- 
+<span id="line429"></span>	&lt;div id="right-column"&gt;
+<span id="line430"></span>		  &lt;div id="dummy-feeds"&gt;
+<span id="line431"></span>			&lt;div id="feeds-banner"&gt;&lt;/div&gt;
+<span id="line432"></span>			&lt;div id="feed-first"&gt;
+<span id="line433"></span>			      &lt;table&gt;
+<span id="line434"></span>				  &lt;tr&gt;
+<span id="line435"></span>				   &lt;td valign="top"&gt;&lt;img src="templates/contineoReg/images/feed1.jpg" id="feed-image" /&gt;&lt;/td&gt;
+<span id="line436"></span>				   &lt;td valign="top"&gt;&lt;div id="feed-text"&gt;Effective Placements, Peer help, Historical repository, Mock tests, Interview scheduling&lt;/div&gt;
+<span id="line437"></span>				 &lt;/td&gt;
+<span id="line438"></span>				&lt;/tr&gt;
+<span id="line439"></span>			      &lt;/table&gt;
+<span id="line440"></span>			  &lt;div id="clear"&gt;&lt;/div&gt;
+<span id="line441"></span>                       &lt;/div&gt; 
+<span id="line442"></span>               &lt;div id="feed"&gt;
+<span id="line443"></span>		        &lt;table&gt;
+<span id="line444"></span>		         &lt;tr&gt;
+<span id="line445"></span>				&lt;td valign="top"&gt;&lt;img src="templates/contineoReg/images/feed2.jpg" id="feed-image" /&gt;&lt;/td&gt;
+<span id="line446"></span>				&lt;td valign="top"&gt;&lt;div id="feed-text"&gt;Alumni Connect: Mentorship, guidance Projects etc.,&lt;/div&gt;&lt;/td&gt;
+<span id="line447"></span>			&lt;/tr&gt;
+<span id="line448"></span>		      &lt;/table&gt;
+<span id="line449"></span>			&lt;div id="clear"&gt;&lt;/div&gt;
+<span id="line450"></span>		&lt;/div&gt;
+<span id="line451"></span> 	        &lt;div id="feed"&gt;
+<span id="line452"></span>			&lt;table&gt;
+<span id="line453"></span>		         &lt;tr&gt;
+<span id="line454"></span>				&lt;td valign="top"&gt;   &lt;img src="templates/contineoReg/images/feed3.jpg" id="feed-image" /&gt;&lt;/td&gt;
+<span id="line455"></span>			&lt;td valign="top"&gt;&lt;div id="feed-text"&gt;Powerful e-learning: Access courseware 24x7 online, Question paper bank, Mock tests etc.,&lt;/div&gt;&lt;/td&gt;
+<span id="line456"></span>			&lt;/tr&gt;
+<span id="line457"></span>		       &lt;/table&gt;
+<span id="line458"></span>			  &lt;div id="clear"&gt;&lt;/div&gt;
+<span id="line459"></span>	       &lt;/div&gt;
+<span id="line460"></span> 	       &lt;div id="feed"&gt;
+<span id="line461"></span>		       &lt;table&gt;
+<span id="line462"></span>		         &lt;tr&gt;
+<span id="line463"></span>				&lt;td valign="top"&gt;  &lt;img src="templates/contineoReg/images/feed4.jpg" id="feed-image" /&gt;&lt;/td&gt;
+<span id="line464"></span>			&lt;td valign="top"&gt;&lt;div id="feed-text"&gt;Connect and learn from peers, seniors, teachers and alumni through the familiar Social media 			channels&lt;/div&gt;&lt;/td&gt;
+<span id="line465"></span>			&lt;/tr&gt;
+<span id="line466"></span>			   &lt;/table&gt;
+<span id="line467"></span>			  &lt;div id="clear"&gt;&lt;/div&gt;
+<span id="line468"></span>	       &lt;/div&gt;
+<span id="line469"></span> 	        &lt;div id="feed"&gt;
+<span id="line470"></span>	&lt;table&gt;
+<span id="line471"></span>           &lt;tr&gt;
+<span id="line472"></span>	&lt;td valign="top"&gt;  &lt;img src="templates/contineoReg/images/feed5.jpg" id="feed-image" /&gt;&lt;/td&gt;
+<span id="line473"></span>	&lt;td valign="top"&gt;&lt;div id="feed-text"&gt;Access your Performance Data Online Attendance, internals and more...&lt;/div&gt;&lt;/td&gt;
+<span id="line474"></span>	&lt;/tr&gt;
+<span id="line475"></span>         &lt;/table&gt;
+<span id="line476"></span>  &lt;div id="clear"&gt;&lt;/div&gt;
+<span id="line477"></span>       &lt;/div&gt;
+<span id="line478"></span>            &lt;div id="feed"&gt;
+<span id="line479"></span>              &lt;table&gt;
+<span id="line480"></span>                &lt;tr&gt;
+<span id="line481"></span>	&lt;td valign="top"&gt;   &lt;img src="templates/contineoReg/images/feed6.jpg" id="feed-image" /&gt;&lt;/td&gt;
+<span id="line482"></span>	&lt;td valign="top"&gt;&lt;div id="feed-text"&gt;Pay exam fees online, Receive alerts by SMS, Manage your bus route&lt;/div&gt;
+<span id="line483"></span>			&lt;/td&gt;
+<span id="line484"></span>	&lt;/tr&gt;
+<span id="line485"></span>         &lt;/table&gt;  &lt;div id="clear"&gt;&lt;/div&gt;
+<span id="line486"></span>		       &lt;/div&gt;
+<span id="line487"></span>&lt;div id="feed" &gt;
+<span id="line488"></span>           &lt;table&gt;
+<span id="line489"></span>                 &lt;tr&gt;
+<span id="line490"></span>	&lt;td valign="top"&gt;&lt;img src="templates/contineoReg/images/feed7.jpg" id="feed-image" /&gt;&lt;/td&gt;
+<span id="line491"></span>	&lt;td valign="top"&gt;&lt;div id="feed-text"&gt;Collaborate without constraints of proximity, location or hierarchy &lt;/div&gt;&lt;/td&gt;
+<span id="line492"></span>	&lt;/tr&gt;
+<span id="line493"></span>        &lt;/table&gt;
+<span id="line494"></span>
+<span id="line495"></span>&lt;div id="clear"&gt;&lt;/div&gt;
+<span id="line496"></span>			  
+<span id="line497"></span>		       &lt;/div&gt;
+<span id="line498"></span>		&lt;/div&gt;
+<span id="line499"></span>	&lt;/div&gt;
+<span id="line500"></span>&lt;/div&gt;--&gt;</span><span>
+<span id="line501"></span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line502"></span>
+<span id="line503"></span></span><span class="error" title="End tag for “body” seen, but there were unclosed elements.">&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line504"></span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span>
+<span id="line505"></span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Go to Line…" accesskey="L"></menuitem><menuitem id="wrapLongLines" label="Wrap Long Lines" type="checkbox"></menuitem><menuitem id="highlightSyntax" label="Syntax Highlighting" type="checkbox" checked="true"></menuitem></menu></body></html>
