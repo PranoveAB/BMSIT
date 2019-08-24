@@ -118,10 +118,11 @@ function submitforms()
 <script type="text/javascript">
 
 function onSignIn(googleUser)
-{	var profile=googleUser.getBasicProfile();
+{	if (auth2.isSignedIn.get()) {
+  	var profile = auth2.currentUser.get().getBasicProfile();
 	$("#sname").attr(""),profile.getName();
 	$("#pic").attr('src',profile.getImageUrl();
-
+	}
 }
 
 </script>
