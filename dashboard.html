@@ -17,6 +17,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="main.js"></script>
+    <script src="script1.js"></script>
+
+<script type=“text/javascript”>
+
+function onSignIn(googleUser)
+{
+	var profile=googleUser.getBasicProfile();
+	$(".g-signin2").css("display","none");
+	//$(".data").css("display","block");
+	$("#pic").attr('src',profile.getImageUrl());
+	$("#email").text(profile.getEmail());
+	$("#name").text(profile.getName());
+
+}
+</script>
+
 
 </head>
 <body id="page_bg"  >
@@ -114,45 +130,32 @@ function submitforms()
 
 </script>
 
-
-<script type="text/javascript">
-
-function onSignIn(googleUser)
-{	if (auth2.isSignedIn.get()) {
-  	var profile = auth2.currentUser.get().getBasicProfile();
-	$("#sname").attr(""),profile.getName();
-	$("#pic").attr('src',profile.getImageUrl();
-	}
-}
-
-</script>
- <!-- </div> -->
+<!-- </div> -->
 </div>
 <div id="sub-container" style = "vertical-align:top;">
 	<div>
           <div id="message-container" >
 	         
 	  </div> 
+	<div class="data">
 	  <!--*************left panel start**************-->
-          <div style="width:15%;float:left;">
-                <img id="pic" src="" class="img-circle" width="100" height="100"/>
-           <div  class="data">
-		  		     <!--<img id="pic" class = "imagize" style="width:130px;height:120px;border: 1px solid #5d5d5d;" />
-                                         <div style="height:2px;"></div>
-                                       <!--  <img id="pic" class="img-circle" width="100" height="100"/>-->   
+	  <div style="width:15%;float:left;">
+             <div style="width:100%;">
+		  		     <img id="pic" class="img-thumbnail" width="100" height="100"/>
+		                         <div style="height:2px;"></div>
               </div>
-             <!-- <div class="tname2" id="sname">
-			           </div>-->
-		<div id="sname"></div>
+              <div class="tname2">
+			        <p id="name"></p>	      </div>
 	      <div class="tname2" style="color:#800080;">
-			        1XXXXXXXXX	      </div>
+			        1BYXXXXXXX	      </div>
 
               <div class="tname2">
-			        Semester X	      </div>
-      	        
-        
-	
-
+			        Semester 5	      </div>
+             	            
+	      
+	      	    
+	    
+</div>
 </div>
 <!-- *************left panel start************** -->
 	<div style="width:80%;float:left;border-left:1px solid #ccc;padding-left:10px;min-height:600px;">
